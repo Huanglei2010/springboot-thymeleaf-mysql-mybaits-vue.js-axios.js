@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet" />
+    <title>Title</title>
+</head>
+<body>
+<div id="demo2">
+    用户名: <input type="text" v-model="account.name">{{account.name}}<br/>
+    金&nbsp;&nbsp;额: <input type="text" v-model="account.money">{{account.money}}<br/>
+    <button @click="insert">插入</button>
+</div>
+<div id="vueInstance">
+    //loginStatus为true时会显示的section
+    <section v-if="loginStatus">
+        输入您的姓名: <input type="text" v-model="name">
+        <button v-on:click="say">欢迎点击</button>
+        <button @click="switchLoginStatus">退出登录</button>
+    </section>
+    <section v-if="loginStatus">
+        用户名: <input type="text" v-model="user.userName">{{user.userName}}<br/>
+        密  码: <input type="password" v-model="user.password">{{user.password}}<br/>
+        电  话: <input type="text" v-model="user.phone">{{user.phone}}<br/>
+        <button @click="add">保存</button>
+    </section>
+
+    //loginStatus为false时会显示的section
+    <section v-if="!loginStatus">
+        登录用户: <input type="text">
+        登录密码: <input type="password">
+        <button @click="switchLoginStatus">登录</button>
+    </section>
+</div>
+<div id="demo1">
+    <button v-on:click="findAll">找到所用人</button><br/>
+    <button v-on:click="push">找到所用人</button><br/>
+    <button v-on:click="pop">找到所用人</button><br/>
+    <button v-on:click="shift">找到所用人</button><br/>
+    <button v-on:click="unshift">找到所用人</button><br/>
+    <button v-on:click="splice">找到所用人</button><br/>
+    <table border="1px">
+        <tr>
+            <th>用 户 名</th>
+            <th>密    码</th>
+            <th>电    话</th>
+        </tr>
+
+        <tr v-for="user in users">
+            <td>{{ user.userName}}</td>
+            <td>{{ user.password}}</td>
+            <td>{{ user.phone}}</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+<script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/vue/vue.min.js}"></script>
+<!-- 因为 AJAX 库和通用工具的生态已经相当丰富，Vue 核心代码没有重复 -->
+<!-- 提供这些功能以保持精简。这也可以让你自由选择自己更熟悉的工具。 -->
+<script type="text/javascript" th:src="@{/js/axios.min.js}"></script>
+
+<script>
+    var demo2=new Vue({
+        el:"#demo2",
+        data:{
+            account:{
+                name:"huanglei",
+                money:"1000"
+            }
+        },
+        methods:{
+            insert:function () {
+                axios.post("/account/insert",this.account,{
+                    headers: {"Content-Type": "application/json"}
+                })
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+        }
+    })
+    var demo1=new Vue({
+        el:"#demo1",
+        data:{
+            user:{
+                userName:"huanglei",
+                password:"112233",
+                phone:"123456"
+            },
+            users:[
+                {
+                    userName:"huanglei",
+                    password:"112233",
+                    phone:"123456"
+                },
+                {
+                    userName:"huanglei",
+                    password:"112233",
+                    phone:"123456"
+                },
+                {
+                    userName:"huanglei",
+                    password:"112233",
+                    phone:"123456"
+                }
+            ]
+        },
+        methods:{
+            findAll:function () {
+                axios.get("/user/findall")
+                    .then(function (response) {
+                        console.log(response);
+                        demo1.users=[];
+                        demo1.users=demo1.users.concat(response.data)
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            },
+            push:function () {
+
+            },
+            pop:function () {
+
+            },
+            shift:function () {
+
+            },
+            unshift:function () {
+
+            },
+            splice:function () {
+
+            }
+
+        }
+    })
+
+    var V = new Vue({
+        el : '#vueInstance',
+        data : {
+            name : '_Appian',
+            loginStatus :　false,
+            user:{
+                userName:"huanglei",
+                password:"112233",
+                phone:"123456"
+            }
+        },
+        methods : {
+            say : function(){
+                alert('欢迎' + this.name);
+            },
+            switchLoginStatus : function(){
+                this.loginStatus = !this.loginStatus;
+            },
+            add:function () {
+                axios.post("/user/add",this.user,{
+                    headers: {"Content-Type": "application/json"}
+                })
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+        }
+    });
+</script>
+</html>
+<!--https://cn.vuejs.org/v2/guide/-->
+<!--https://cn.vuejs.org/v2/guide/class-and-style.html-->
