@@ -9,7 +9,7 @@ small demo, could be used as a framwork ,begin work quickly.
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/%E4%BA%8B%E5%8A%A1.png)
 ===
- 校验
+校验
 ===
  ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/%E6%A0%A1%E9%AA%8C.png)
 ===
@@ -22,11 +22,11 @@ small demo, could be used as a framwork ,begin work quickly.
 ===
 
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/demo_demoAdd.png)
-account/one1
 
+account/one1
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/account_one1.png)
-user/one1
 
+user/one1
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/user_one1.png)
