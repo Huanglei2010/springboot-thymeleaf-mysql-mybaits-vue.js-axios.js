@@ -16,14 +16,17 @@ small demo, could be used as a framwork ,begin work quickly.
 访问 demo/deom
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/demo_demo.png)
-===
-跳转 
 
 ===
+跳转 
+===
+
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/demo_demoAdd.png)
 account/one1
+
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/account_one1.png)
 user/one1
+
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/user_one1.png)
