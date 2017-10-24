@@ -46,3 +46,7 @@ axios的post访问添加账户
 axios的post访问刷新数组
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/axios-%E5%88%B7%E6%96%B0%E6%95%B0%E7%BB%84.png)
+
+mybatis自动生成代码
+===
+![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/mybatis%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png)
