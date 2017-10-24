@@ -17,7 +17,7 @@ small demo, could be used as a framwork ,begin work quickly.
 ===
 ![image](https://github.com/Huanglei2010/springboot-thymeleaf-mysql-mybaits-vue.js-axios.js/blob/master/images/demo_demo.png)
 
-===
+
 跳转 
 ===
 
