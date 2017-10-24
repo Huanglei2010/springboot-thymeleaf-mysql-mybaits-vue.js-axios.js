@@ -3,10 +3,11 @@ small demo, could be used as a framwork ,begin work quickly.
 ===
  
 ==
-本人 微博地址 http://weibo.com/tensorflow  (新浪微博)
-博客 地址 http://www.cnblogs.com/huanglei2010 (博客园 )
-博客 地址 http://blog.csdn.net/shashoudouhenleng  (csdn)
-博客 地址 http://blog.sina.com.cn/tensorflow  (新浪博客)
+微博地址 http://weibo.com/tensorflow  (新浪微博)
+博客地址 http://www.cnblogs.com/huanglei2010 (博客园 )
+博客地址 http://blog.csdn.net/shashoudouhenleng  (csdn)
+博客地址 http://blog.sina.com.cn/tensorflow  (新浪博客)
+博客地址 https://segmentfault.com/u/huanglei2010 (segmentfault)
 ===
 项目 结构
 ===
