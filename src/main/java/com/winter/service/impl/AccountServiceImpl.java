@@ -26,6 +26,4 @@ public class AccountServiceImpl implements AccountService{
         accountMapper.insertAccount(account);
 
     }
-
-
 }

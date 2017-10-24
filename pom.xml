@@ -43,6 +43,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--http://blog.sina.com.cn/s/blog_c90ce4e0010328r9.html-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -100,6 +106,8 @@
 			<artifactId>vue</artifactId>
 			<version>2.1.3</version>
 		</dependency>
+
+		<!--http://blog.sina.com.cn/s/blog_c90ce4e0010328r9.html-->
 
 	</dependencies>
 

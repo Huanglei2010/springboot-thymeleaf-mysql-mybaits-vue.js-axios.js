@@ -16,6 +16,12 @@ public class Account {
         this.money = money;
     }
 
+    public Account(String name, double money) {
+        this.name = name;
+        this.money = money;
+    }
+
+
     public void setId(int id) {
         this.id = id;
     }
